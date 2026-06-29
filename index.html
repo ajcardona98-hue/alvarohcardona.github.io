@@ -232,6 +232,59 @@ border-radius:15px;
 
 }
 
+
+.mapa-contenedor{
+
+margin-top:50px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+background:white;
+
+}
+
+.mapa-contenedor iframe{
+
+width:100%;
+height:430px;
+border:0;
+display:block;
+
+}
+
+.link-mapa{
+
+color:#b9895a;
+text-decoration:none;
+font-weight:500;
+
+}
+
+.link-mapa:hover{
+
+text-decoration:underline;
+
+}
+
+.boton-mapa{
+
+margin-top:30px;
+display:inline-block;
+padding:14px 32px;
+background:#b9895a;
+color:white;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+
+}
+
+.boton-mapa:hover{
+
+background:#87613e;
+
+}
+
 footer{
 
 background:#ede6df;
@@ -299,6 +352,8 @@ font-size:13px;
 
 <a href="#galeria">Galería</a>
 
+<a href="#ubicacion">Ubicación</a>
+
 <a href="#contacto">Contacto</a>
 
 </nav>
@@ -310,7 +365,7 @@ font-size:13px;
 <h2>Nos Casamos</h2>
 
 <div class="fecha">
-14 • Junio • 2027
+26 • Junio • 2027
 </div>
 
 <a href="#evento" class="boton">
@@ -395,7 +450,8 @@ Nuestro Gran Día
 
 📍 Lugar<br>
 
-_________________________<br><br>
+Lugar de la boda<br>
+<a class="link-mapa" href="https://maps.app.goo.gl/BRvkktZuh7rkqtEL7" target="_blank">Ver ubicación en Google Maps</a><br><br>
 
 🕓 Hora<br>
 
@@ -413,7 +469,8 @@ _________________________<br><br>
 
 📍 Lugar<br>
 
-_________________________<br><br>
+Mismo lugar de la ceremonia<br>
+<a class="link-mapa" href="https://maps.app.goo.gl/BRvkktZuh7rkqtEL7" target="_blank">Ver ubicación en Google Maps</a><br><br>
 
 🥂 Celebración<br>
 
@@ -424,6 +481,34 @@ _________________________<br><br>
 </div>
 
 </div>
+
+</section>
+
+
+<section id="ubicacion">
+
+<h2 class="titulo">
+Ubicación
+</h2>
+
+<p class="subtitulo">
+La ceremonia y la recepción se realizarán en el mismo lugar: El Retiro de San Juan.
+</p>
+
+<div class="mapa-contenedor">
+<iframe
+  src="https://maps.google.com/maps?q=El%20Retiro%20de%20San%20Juan%2C%20Bogota%2C%20Colombia&ll=4.7900863,-74.0613283&z=17&output=embed"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+<p style="text-align:center;">
+<a class="boton-mapa" href="https://maps.app.goo.gl/BRvkktZuh7rkqtEL7" target="_blank">
+Abrir ubicación en Google Maps
+</a>
+</p>
 
 </section>
 

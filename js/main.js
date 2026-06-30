@@ -4,15 +4,15 @@ function actualizarContador(){
   const ahora = new Date().getTime();
   const distancia = fechaBoda - ahora;
 
-  const dias = Math.max(0, Math.floor(distancia / (1000 * 60 * 60 * 24)));
-  const horas = Math.max(0, Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-  const minutos = Math.max(0, Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60)));
-  const segundos = Math.max(0, Math.floor((distancia % (1000 * 60)) / 1000));
+  const dias = Math.max(0, Math.floor(distancia/(1000*60*60*24)));
+  const horas = Math.max(0, Math.floor((distancia%(1000*60*60*24))/(1000*60*60)));
+  const minutos = Math.max(0, Math.floor((distancia%(1000*60*60))/(1000*60)));
+  const segundos = Math.max(0, Math.floor((distancia%(1000*60))/1000));
 
-  document.getElementById("dias").innerHTML = dias;
-  document.getElementById("horas").innerHTML = horas;
-  document.getElementById("minutos").innerHTML = minutos;
-  document.getElementById("segundos").innerHTML = segundos;
+  document.getElementById('dias').textContent = dias;
+  document.getElementById('horas').textContent = horas;
+  document.getElementById('minutos').textContent = minutos;
+  document.getElementById('segundos').textContent = segundos;
 }
 
 actualizarContador();

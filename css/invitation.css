@@ -1,1 +1,50 @@
 :root{--marfil:#fff8ee;--papel:#fff4e5;--dorado:#c9974f;--dorado-oscuro:#8d6434;--sombra:rgba(28,20,14,.42)}.intro-boda{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(circle at top,#fff7ea 0,#dcc7aa 42%,#6a5849 100%)}.intro-boda::before{content:"";position:absolute;inset:0;background:rgba(20,16,13,.30);backdrop-filter:blur(2px)}.brillo{position:absolute;border-radius:50%;filter:blur(18px);opacity:.55;background:#fff}.brillo-uno{width:260px;height:260px;top:11%;left:18%;animation:flotar 7s infinite alternate}.brillo-dos{width:180px;height:180px;right:16%;bottom:16%;animation:flotar 8s infinite alternate-reverse}.sobre-escena{position:relative;width:min(560px,88vw);height:min(740px,88vh);display:flex;align-items:flex-end;justify-content:center;perspective:1400px}.invitacion-carta{position:absolute;bottom:170px;width:88%;min-height:520px;padding:70px 38px 45px;text-align:center;border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(255,244,226,.98));box-shadow:0 25px 70px rgba(0,0,0,.24);border:1px solid rgba(201,151,79,.28);z-index:2;transform:translateY(250px) scale(.86);opacity:0}.invitacion-carta::before,.invitacion-carta::after{content:"❦";position:absolute;color:rgba(201,151,79,.35);font-size:72px}.invitacion-carta::before{top:16px;left:20px;transform:rotate(-35deg)}.invitacion-carta::after{right:22px;bottom:18px;transform:rotate(145deg)}.ornamento-arriba{font-size:28px;color:var(--dorado);margin-bottom:34px}.texto-invitado,.texto-boda{text-transform:uppercase;letter-spacing:9px;color:var(--dorado-oscuro);font-size:18px}.texto-boda{margin-top:14px}.separador{display:flex;align-items:center;justify-content:center;gap:18px;margin:28px 0;color:var(--dorado)}.separador span{width:72px;height:1px;background:rgba(201,151,79,.72)}.invitacion-carta h1{font-family:'Great Vibes',cursive;font-size:78px;line-height:.9;color:var(--dorado-oscuro);font-weight:400}.invitacion-carta h2{font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--dorado-oscuro);margin:10px 0}.fecha-carta{margin-top:25px;color:#7d6a55;letter-spacing:1px}.boton-entrar{margin-top:28px;border:0;border-radius:999px;padding:15px 42px;background:linear-gradient(135deg,#d7a657,#b7803d);color:white;text-transform:uppercase;letter-spacing:2px;font-weight:600;cursor:pointer;box-shadow:0 12px 28px rgba(176,126,61,.28);transition:.25s}.boton-entrar:hover{transform:translateY(-2px);filter:brightness(1.06)}.sobre{position:absolute;bottom:0;width:100%;height:330px;z-index:3;filter:drop-shadow(0 26px 34px rgba(0,0,0,.26))}.solapa,.bolsillo{position:absolute;inset:auto}.solapa-fondo{left:0;bottom:0;width:100%;height:100%;background:#f7ead6;clip-path:polygon(0 0,50% 52%,100% 0,100% 100%,0 100%);border-radius:0 0 18px 18px}.solapa-superior{left:0;top:0;width:100%;height:210px;background:linear-gradient(180deg,#fff6e7,#ecd8bb);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top center;z-index:6;box-shadow:inset 0 -12px 25px rgba(128,87,48,.08)}.bolsillo-izq{left:0;bottom:0;width:55%;height:235px;background:linear-gradient(135deg,#fff8ec,#ead8bd);clip-path:polygon(0 0,100% 100%,0 100%);z-index:7}.bolsillo-der{right:0;bottom:0;width:55%;height:235px;background:linear-gradient(225deg,#fff8ec,#ead8bd);clip-path:polygon(100% 0,100% 100%,0 100%);z-index:7}.bolsillo-frente{left:0;bottom:0;width:100%;height:182px;background:linear-gradient(180deg,#fff8ec,#ead8bd);clip-path:polygon(0 100%,50% 0,100% 100%);z-index:8;border-radius:0 0 18px 18px}.sello{position:absolute;left:50%;bottom:118px;transform:translateX(-50%);width:78px;height:78px;border-radius:50%;z-index:10;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:34px;color:#fff2d3;background:radial-gradient(circle at 35% 30%,#d3a466,#875d31);box-shadow:inset 0 0 0 6px rgba(255,229,176,.25),0 8px 20px rgba(74,44,18,.28)}.mariposa{position:absolute;top:46%;left:50%;width:78px;height:58px;z-index:12;opacity:0;transform:translate(-50%,-50%) scale(.7)}.ala{position:absolute;top:5px;width:42px;height:48px;background:radial-gradient(circle at 55% 40%,#fff,#fff5db 54%,#e5bb6b);border:1px solid rgba(201,151,79,.45);filter:drop-shadow(0 5px 10px rgba(201,151,79,.25))}.ala-izquierda{right:38px;border-radius:80% 20% 75% 25%;transform-origin:right center;animation:aleteoIzq .34s ease-in-out infinite alternate}.ala-derecha{left:38px;border-radius:20% 80% 25% 75%;transform-origin:left center;animation:aleteoDer .34s ease-in-out infinite alternate}.cuerpo{position:absolute;left:36px;top:18px;width:8px;height:30px;border-radius:20px;background:#9f7148}.intro-boda.ocultar{animation:salirIntro .9s ease forwards}@keyframes aleteoIzq{from{transform:rotateY(12deg) rotate(-14deg)}to{transform:rotateY(68deg) rotate(-8deg)}}@keyframes aleteoDer{from{transform:rotateY(-12deg) rotate(14deg)}to{transform:rotateY(-68deg) rotate(8deg)}}@keyframes flotar{to{transform:translateY(-28px) translateX(18px)}}@keyframes salirIntro{to{opacity:0;visibility:hidden}}@media(max-width:620px){.sobre-escena{width:94vw;height:82vh}.invitacion-carta{width:90%;min-height:455px;bottom:145px;padding:58px 24px 34px}.invitacion-carta h1{font-size:58px}.texto-invitado,.texto-boda{font-size:14px;letter-spacing:6px}.sobre{height:270px}.solapa-superior{height:175px}.bolsillo-izq,.bolsillo-der{height:195px}.bolsillo-frente{height:150px}.sello{width:64px;height:64px;bottom:98px}.fecha-carta{font-size:13px}.boton-entrar{padding:14px 32px}}
+
+/* Correccion: la carta queda completamente por encima del sobre al terminar la animacion */
+.sobre-escena{
+  height:clamp(650px,88vh,780px);
+}
+.invitacion-carta{
+  bottom:175px;
+  z-index:4;
+}
+.sobre{
+  z-index:6;
+}
+.boton-saltar-intro{
+  position:absolute;
+  right:22px;
+  top:22px;
+  z-index:30;
+  border:1px solid rgba(255,255,255,.55);
+  background:rgba(255,255,255,.22);
+  color:#fff7e8;
+  padding:10px 16px;
+  border-radius:999px;
+  cursor:pointer;
+  letter-spacing:.5px;
+  backdrop-filter:blur(8px);
+}
+.boton-saltar-intro:hover{
+  background:rgba(255,255,255,.35);
+}
+
+@media(max-height:760px){
+  .sobre-escena{height:94vh;align-items:flex-end;}
+  .invitacion-carta{min-height:455px;padding:45px 30px 32px;bottom:155px;}
+  .invitacion-carta h1{font-size:62px;}
+  .ornamento-arriba{margin-bottom:20px;}
+  .texto-invitado,.texto-boda{font-size:15px;letter-spacing:7px;}
+  .separador{margin:20px 0;}
+  .fecha-carta{margin-top:18px;}
+  .boton-entrar{margin-top:18px;}
+  .sobre{height:285px;}
+  .solapa-superior{height:180px;}
+  .bolsillo-izq,.bolsillo-der{height:205px;}
+  .bolsillo-frente{height:155px;}
+  .sello{bottom:100px;}
+}
+
+@media(max-width:620px){
+  .boton-saltar-intro{right:14px;top:14px;padding:9px 13px;font-size:12px;}
+}

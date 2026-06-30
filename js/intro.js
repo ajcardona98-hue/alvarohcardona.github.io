@@ -3,7 +3,6 @@ document.body.classList.add('intro-active');
 const intro = document.getElementById('intro');
 const site = document.getElementById('site');
 const enterSite = document.getElementById('enterSite');
-const skipIntro = document.getElementById('skipIntro');
 
 function openSite(){
   intro.classList.add('hidden');
@@ -13,7 +12,6 @@ function openSite(){
 }
 
 enterSite.addEventListener('click', openSite);
-skipIntro.addEventListener('click', openSite);
 
 // Seguridad: si algo falla en la animación, permite entrar después de 9 segundos.
 setTimeout(() => {

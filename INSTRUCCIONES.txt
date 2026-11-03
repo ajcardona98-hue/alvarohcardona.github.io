@@ -1,0 +1,11 @@
+ÁLVARO & MALALA — RSVP SIMPLE
+
+1. En Supabase > SQL Editor ejecuta SUPABASE-RSVP.sql.
+2. En js/config.js coloca tu Project URL y tu clave pública publishable/anon (NUNCA secret/service_role).
+3. Sube los archivos y carpetas del directorio al repositorio GitHub Pages; no subas la carpeta .git.
+4. Visita tu sitio, abre la invitación y envía una respuesta de prueba.
+5. Visita https://TU-DOMINIO/admin.html e inicia sesión con el usuario administrador ya registrado en wedding_admins.
+6. Comprueba que la respuesta aparezca.
+
+ADVERTENCIA: un formulario público sin cuentas puede recibir envíos falsos o duplicados. La lista no es pública gracias a RLS, pero no existe protección anti-spam robusta. La identidad no está verificada.
+No publiques credenciales privadas.

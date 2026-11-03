@@ -57,6 +57,7 @@
       <a href="#contador">Cuenta Regresiva</a>
       <a href="#evento">El Gran Día</a>
       <a href="#ubicacion">Ubicación</a>
+      <a href="#rsvp">Confirmar asistencia</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
@@ -119,12 +120,36 @@
       </div>
     </section>
 
+
+    <section id="rsvp" class="rsvp-section">
+      <h2 class="titulo">Confirma tu asistencia</h2>
+      <p class="subtitulo">Nos encantará saber si nos acompañarás en este día tan especial.</p>
+      <form id="rsvpForm" class="rsvp-form">
+        <div class="rsvp-fields">
+          <label>Nombre<input name="first_name" maxlength="70" autocomplete="given-name" required placeholder="Tu nombre"></label>
+          <label>Apellido<input name="last_name" maxlength="70" autocomplete="family-name" required placeholder="Tu apellido"></label>
+        </div>
+        <fieldset><legend>¿Asistirás a nuestra boda?</legend>
+          <label class="rsvp-choice"><input type="radio" name="attendance" value="yes" required> Sí, asistiré</label>
+          <label class="rsvp-choice"><input type="radio" name="attendance" value="no"> No podré asistir</label>
+        </fieldset>
+        <fieldset id="companionOptions" hidden><legend>¿Cómo asistirás?</legend>
+          <label class="rsvp-choice"><input type="radio" name="companion" value="solo"> Asistiré solo/a</label>
+          <label class="rsvp-choice"><input type="radio" name="companion" value="couple"> Asistiré con pareja</label>
+        </fieldset>
+        <button class="rsvp-submit" type="submit">Enviar respuesta</button>
+        <p id="rsvpMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
     <footer id="contacto">
       <h2>¡Te esperamos!</h2>
       <p>Será un honor compartir este momento contigo.<br><br>Con cariño,<br><br><b>Alvaro & Malala</br><i>Si tienes alguna duda escribenos! +57 315 677 7276</i></p>
     </footer>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/rsvp.js"></script>
   <script src="js/main.js"></script>
   <script src="js/intro.js"></script>
 </body>

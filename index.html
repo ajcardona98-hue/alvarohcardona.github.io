@@ -1,156 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alvaro & Malala | Nuestra Boda</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4e4d9">
+  <meta name="description" content="Álvaro y Malala te invitan a celebrar su matrimonio el 26 de junio de 2027. Confirma tu asistencia aquí.">
+  <title>Álvaro & Malala · Nuestra boda</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/intro.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- INTRO ANIMADA -->
-  <section id="intro" class="intro" aria-label="Intro de invitación">
-    <div class="sparkles" aria-hidden="true"></div>
-
-    <div class="intro-stage">
-      <div class="butterfly" aria-hidden="true">
-        <span class="wing wing-left"></span>
-        <span class="body"></span>
-        <span class="wing wing-right"></span>
-      </div>
-
-      <article class="invitation-card">
-        <div class="floral floral-top">✽</div>
-        <p class="overline">ESTÁS INVITADO</p>
-        <p class="overline second">A NUESTRA BODA</p>
-        <div class="divider"><span></span>♥<span></span></div>
-        <h1>Alvaro</h1>
-        <p class="ampersand">&</p>
-        <h1>Malala</h1>
-        <p class="date">26 de junio de 2027 · 4:00 PM</p>
-        <button id="enterSite" class="enter-button" type="button">Ver invitación</button>
-        <div class="floral floral-bottom">✽</div>
-      </article>
-
-      <div class="envelope" aria-hidden="true">
-        <div class="envelope-back"></div>
-        <div class="envelope-inner-shadow"></div>
-        <div class="envelope-flap"></div>
-        <div class="envelope-front-left"></div>
-        <div class="envelope-front-right"></div>
-        <div class="envelope-front-bottom"></div>
-        <div class="wax-seal">❦</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PÁGINA PRINCIPAL -->
-  <main id="site" class="site locked">
-    <nav>
-      <a href="#historia">Nuestra Historia</a>
-      <a href="#contador">Cuenta Regresiva</a>
-      <a href="#evento">El Gran Día</a>
-      <a href="#ubicacion">Ubicación</a>
-      <a href="#rsvp">Confirmar asistencia</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-
-    <section class="hero">
-      <h1>Alvaro & Malala</h1>
-      <h2>Nos Casamos</h2>
-      <div class="fecha">26 • Junio • 2027<br>4:00 PM</div>
-      <a href="#evento" class="boton">Ver Invitación</a>
-    </section>
-
-    <section id="historia">
-      <h2 class="titulo">Nuestra Historia</h2>
-      <p class="subtitulo">
-        Después de compartir momentos inolvidables, aventuras, sueños y proyectos,
-        hemos decidido comenzar el capítulo más importante de nuestras vidas.
-        Nos llena de alegría invitarte a celebrar con nosotros este día tan especial.
-      </p>
-    </section>
-
-    <section id="contador">
-      <h2 class="titulo">Faltan...</h2>
-      <div class="contador">
-        <div class="numero"><h3 id="dias">0</h3><span>Días</span></div>
-        <div class="numero"><h3 id="horas">0</h3><span>Horas</span></div>
-        <div class="numero"><h3 id="minutos">0</h3><span>Minutos</span></div>
-        <div class="numero"><h3 id="segundos">0</h3><span>Segundos</span></div>
+  <main id="site" class="site">
+    <section class="opening" aria-labelledby="names">
+      <div class="invitation-sheet">
+        <svg class="bow" viewBox="0 0 160 160" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M79 41c-15-15-42-25-52-15-12 13 13 35 42 33M82 41c15-16 39-26 50-15 13 14-12 36-40 33M69 41c5-10 19-10 24 0 5 10-3 20-13 20S64 51 69 41Z"/>
+          <path d="M73 59c-4 24-8 58-9 89l-9-10M86 60c3 23 11 55 22 79l7-13M70 63c-3 21-6 45-7 66M89 63c4 24 10 43 17 60"/>
+          <path d="M66 40c-11-9-23-14-33-13M93 40c12-10 25-15 35-12"/>
+        </svg>
+        <p class="eyebrow">CON INMENSA ALEGRÍA</p>
+        <p class="invitation-intro">tenemos el honor de invitarte<br>a celebrar nuestro matrimonio</p>
+        <h1 id="names"><span>Álvaro</span><em>y</em><span>Malala</span></h1>
+        <div class="fine-rule" aria-hidden="true"></div>
+        <p class="invitation-date">SÁBADO · 26 DE JUNIO DE 2027</p>
+        <p class="invitation-time">A LAS 4:00 DE LA TARDE</p>
+        <p class="invitation-place">Retiro de San Juan<br><small>Bogotá, Colombia</small></p>
+        <p class="handwritten">¡Nos encantará contar contigo!</p>
+        <a class="text-link" href="#rsvp">CONFIRMAR ASISTENCIA <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
-    <section id="evento">
-      <h2 class="titulo">Nuestro Gran Día</h2>
-      <div class="eventos">
-        <div class="card">
-          <h3>Ceremonia</h3>
-          <p>📍 Lugar<br>Retiro de San Juan<br>Autopista Norte No. 212 Km 13 Vía Arrayanes Bogotá, Colombia<br>🕓 Hora<br>4:00 PM</p>
+    <section id="rsvp" class="rsvp-section" aria-labelledby="rsvp-title">
+      <div class="section-inner">
+        <p class="eyebrow">NOS HARÁ MUY FELICES VERTE</p>
+        <h2 id="rsvp-title" class="section-title">Confirma tu asistencia</h2>
+        <p class="section-description">Por favor, cuéntanos si podrás acompañarnos en este día tan especial.</p>
+        <form id="rsvpForm" class="rsvp-form">
+          <div class="rsvp-fields">
+            <label>Nombre<input name="first_name" maxlength="70" autocomplete="given-name" required placeholder="Tu nombre"></label>
+            <label>Apellido<input name="last_name" maxlength="70" autocomplete="family-name" required placeholder="Tu apellido"></label>
+          </div>
+          <fieldset><legend>¿Asistirás a nuestra boda?</legend>
+            <label class="rsvp-choice"><input type="radio" name="attendance" value="yes" required><span>Sí, asistiré</span></label>
+            <label class="rsvp-choice"><input type="radio" name="attendance" value="no"><span>No podré asistir</span></label>
+          </fieldset>
+          <fieldset id="companionOptions" hidden><legend>¿Cómo asistirás?</legend>
+            <label class="rsvp-choice"><input type="radio" name="companion" value="solo"><span>Asistiré solo/a</span></label>
+            <label class="rsvp-choice"><input type="radio" name="companion" value="couple"><span>Asistiré con pareja</span></label>
+          </fieldset>
+          <button class="rsvp-submit" type="submit">Enviar respuesta</button>
+          <p id="rsvpMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="evento" class="details-section" aria-labelledby="details-title">
+      <div class="section-inner">
+        <p class="eyebrow">UN DÍA PARA RECORDAR</p>
+        <h2 id="details-title" class="section-title">Los detalles</h2>
+        <div class="event-details">
+          <article class="event-detail"><p class="detail-symbol" aria-hidden="true">✦</p><h3>Ceremonia</h3><p>Sábado, 26 de junio de 2027</p><p>4:00 p. m.</p><p>Retiro de San Juan</p></article>
+          <div class="detail-separator" aria-hidden="true"></div>
+          <article class="event-detail"><p class="detail-symbol" aria-hidden="true">✦</p><h3>Recepción</h3><p>Al finalizar la ceremonia</p><p>Desde las 5:00 p. m.</p><p>En el mismo lugar</p></article>
         </div>
-        <div class="card">
-          <h3>Recepción</h3>
-          <p>📍 Mismo lugar de la ceremonia<br>Retiro de San Juan<br><br>🥂 Celebración<br>5:00 PM</p>
-        </div>
+        <div class="photo-frame"><img src="images/foto1.jpg" alt="Fotografía de Álvaro y Malala" loading="lazy"></div>
       </div>
     </section>
 
-    <section id="ubicacion">
-      <h2 class="titulo">Ubicación</h2>
-      <p class="subtitulo">La ceremonia y la recepción se realizarán en el mismo lugar.</p>
-      <div class="mapa-contenedor">
-        <iframe
-          src="https://www.google.com/maps?q=https://maps.app.goo.gl/BRvkktZuh7rkqtEL7&output=embed"
-          width="100%"
-          height="420"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <div class="mapa-boton-wrap">
-        <a class="boton-maps" href="https://maps.app.goo.gl/BRvkktZuh7rkqtEL7" target="_blank" rel="noopener">Abrir ubicación en Google Maps</a>
+    <section id="ubicacion" class="location-section" aria-labelledby="location-title">
+      <div class="section-inner">
+        <p class="eyebrow">TE ESPERAMOS EN</p>
+        <h2 id="location-title" class="section-title">Retiro de San Juan</h2>
+        <p class="section-description">Autopista Norte No. 212, km 13, vía Arrayanes<br>Bogotá, Colombia</p>
+        <a class="outline-button" href="https://maps.app.goo.gl/BRvkktZuh7rkqtEL7" target="_blank" rel="noopener noreferrer">Ver cómo llegar <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-
-    <section id="rsvp" class="rsvp-section">
-      <h2 class="titulo">Confirma tu asistencia</h2>
-      <p class="subtitulo">Nos encantará saber si nos acompañarás en este día tan especial.</p>
-      <form id="rsvpForm" class="rsvp-form">
-        <div class="rsvp-fields">
-          <label>Nombre<input name="first_name" maxlength="70" autocomplete="given-name" required placeholder="Tu nombre"></label>
-          <label>Apellido<input name="last_name" maxlength="70" autocomplete="family-name" required placeholder="Tu apellido"></label>
-        </div>
-        <fieldset><legend>¿Asistirás a nuestra boda?</legend>
-          <label class="rsvp-choice"><input type="radio" name="attendance" value="yes" required> Sí, asistiré</label>
-          <label class="rsvp-choice"><input type="radio" name="attendance" value="no"> No podré asistir</label>
-        </fieldset>
-        <fieldset id="companionOptions" hidden><legend>¿Cómo asistirás?</legend>
-          <label class="rsvp-choice"><input type="radio" name="companion" value="solo"> Asistiré solo/a</label>
-          <label class="rsvp-choice"><input type="radio" name="companion" value="couple"> Asistiré con pareja</label>
-        </fieldset>
-        <button class="rsvp-submit" type="submit">Enviar respuesta</button>
-        <p id="rsvpMessage" role="status" aria-live="polite"></p>
-      </form>
-    </section>
     <footer id="contacto">
-      <h2>¡Te esperamos!</h2>
-      <p>Será un honor compartir este momento contigo.<br><br>Con cariño,<br><br><b>Alvaro & Malala</br><i>Si tienes alguna duda escribenos! +57 315 677 7276</i></p>
+      <p class="eyebrow">CON TODO NUESTRO CARIÑO</p>
+      <p class="closing-names">Álvaro <em>&</em> Malala</p>
+      <p>Gracias por ser parte de nuestra historia.</p>
+      <p class="contact-line">¿Tienes alguna pregunta? <a href="https://wa.me/573156777276" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a></p>
     </footer>
   </main>
-
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="js/config.js"></script>
   <script src="js/rsvp.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/intro.js"></script>
 </body>
 </html>

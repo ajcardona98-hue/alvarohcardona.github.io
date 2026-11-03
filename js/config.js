@@ -1,4 +1,4 @@
 window.WEDDING_CONFIG = {
-  supabaseUrl: 'PEGA_AQUI_TU_PROJECT_URL',
-  supabaseAnonKey: 'PEGA_AQUI_TU_PUBLISHABLE_KEY'
+  supabaseUrl: 'https://gktmeqxeaolijwhekhmw.supabase.co/rest/v1/',
+  supabaseAnonKey: 'sb_publishable_vZNIGfSE6TXgDbIdu23Rkg_JwwNak8p'
 };
